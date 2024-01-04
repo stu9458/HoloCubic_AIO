@@ -94,6 +94,7 @@ void setup()
     app_controller->read_config(&app_controller->rgb_cfg);
 
     /*** Init screen ***/
+    app_controller->sys_cfg.rotation = 0; //讓屏幕的狀態是正的
     screen.init(app_controller->sys_cfg.rotation,
                 app_controller->sys_cfg.backLight);
 
